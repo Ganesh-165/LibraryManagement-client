@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import classes from "./Login.module.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from 'axios';
 
 function Login() {
   const [email,setEmail] = useState('');
@@ -11,18 +10,18 @@ function Login() {
   const [type, setType] = useState("");
   const [message,setMessage] = useState("");
   const navigate = useNavigate();
-  axios.defaults.withCredentials = true;
   const onHandleSubmit = async(e) => {
     console.log(type);
     e.preventDefault();
-    const response =  await axios.post("https://librarymanagement-fqqg.onrender.com",{email:email,password:password},{
-        headers:{'Context-Type':"application/json"},
-        withCredentials:true
-      })
-    if(response.data.success){
-      if(response.data.type === 'admin')navigate('/admin');
-      if(response.data.type === 'user')navigate('/user');
+    if(email === 'user@gmail.com' && password === 'user@123' && type==='user'){
+      navigate('/user');
     }
+    if(email === 'admin@gmail.com' && password === 'admin@123' &&  type==='admin'){
+      navigate('/admin');
+    }
+    setMessage("user loginId:user@gmail.com Password:user@123"+
+    "admin loginid:admin@gmail.com Password:admin@123");
+    setTimeout(()=>{setMessage("")},20000)
   };
   const setEmailHandler = (event)=>{
     setEmail(event.target.value);
@@ -34,7 +33,7 @@ function Login() {
   return (
     <div className={classes.login}>
       <h1 className={classes.header}>Login</h1>
-      <p>{message}</p>
+      {message}
       <form
         type="submit"
         onSubmit={onHandleSubmit}
