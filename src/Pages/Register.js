@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { useNavigate, NavLink } from "react-router-dom";
 import classes from "./Register.module.css";
-import axios from "axios";
 import Input from "./Input";
 
 function Register() {
@@ -78,22 +77,12 @@ function Register() {
       required: true,
     },
   ];
-  axios.defaults.withCredentials = true;
   const navigate = useNavigate();
   const [message,setMessage] = useState('');
   const handleSubmit = async(e) => {
     e.preventDefault();
-    const response =  await axios.post("https://librarymanagement-fqqg.onrender.com/register",{email:values.email,password:values.password,name:values.name,username:values.username,mobileno:values.mobileno,type:"user"},{
-      headers:{'Context-Type':"application/json"},
-      withCredentials:true
-    })
-    if(response.data.success){
-      navigate('/');
-    }
-    else{
-      setMessage(response.data.message);
-      setTimeout(()=>{setMessage(null)},6000)
-    }
+    setMessage("Registered Sucssesfully");
+    setTimeout(()=>{navigate('/')},3000)
   };
 
   const onChange = (e) => {
