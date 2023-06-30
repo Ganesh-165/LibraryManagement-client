@@ -3,29 +3,34 @@ import { NavLink } from "react-router-dom";
 import classes from "./Login.module.css";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 
 function Login() {
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');
   const [type, setType] = useState("");
   const [message,setMessage] = useState("");
-  axios.defaults.withCredentials = true;
   const navigate = useNavigate();
   const onHandleSubmit = async(e) => {
     console.log(type);
     e.preventDefault();
-    const response =  await axios.post("https://librarymanagement-fqqg.onrender.com",{email:email,password:password,type:type},{
-        headers:{'Context-Type':"application/json"},
-        withCredentials:true
-      })
-    if(response.data.success){
-      if(response.data.type === 'admin')navigate('/admin');
-      if(response.data.type === 'user')navigate('/user');
+    // const response =  await axios.post("https://librarymanagement-fqqg.onrender.com",{email:email,password:password,type:type},{
+    //     headers:{'Context-Type':"application/json"},
+    //     withCredentials:true
+    //   })
+    // if(response.data.success){
+    //   if(response.data.type === 'admin')navigate('/admin');
+    //   if(response.data.type === 'user')navigate('/user');
+    // }
+    if(email === "user@gmail.com" && password === "user@123" type==="user"){
+      navigate(/user);
+    }
+    if(email === "admin@gmail.com" && password === "admin@123" type==="admin"){
+      navigate(/admin);
     }
     else{
-      setMessage(response.data.message);
-      setTimeout(()=>{setMessage(null)},6000)
+      type==="user" && setMessage("login-id:user@gmail.com password:user@123");
+      type === "admin"  && setMessage("login-id:admin@gmail.com password:admin@123");
+      setTimeout(()=>{setMessage(null)},1000)
     }
     
   };
