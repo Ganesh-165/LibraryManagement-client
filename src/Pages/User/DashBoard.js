@@ -6,7 +6,7 @@ import myImage from "../../Images/dummyuser.jpg";
 const DashBoard = () => {
   return (
     <Card>
-      <h2>Welcome {username}</h2>
+      <h2>Welcome username</h2>
       <div className={classes.image}>
         <img src={myImage} alt="Photo" />
       </div>
