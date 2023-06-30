@@ -1,0 +1,17 @@
+.inputs{
+    display: flex;
+    flex-direction: column;
+}
+p{
+    font-size: 12px;
+    padding: 3px;
+    color: #0077b6;
+    display: none;
+}
+input:invalid[focused="true"]{
+    border: 1px solid#0077b6;
+}
+
+input:invalid[focused="true"] ~p{
+    display: block;
+}

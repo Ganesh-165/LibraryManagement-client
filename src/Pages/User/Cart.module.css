@@ -1,0 +1,33 @@
+.tableheader{
+	margin-top: 10px;
+    display:flex;
+	width:98%;
+	background:#2a2185;
+	padding:10px;
+}
+table{
+    width: 100%;
+}
+.tablerow {
+	display:flex;
+	width:98%;
+	padding:10px;
+}
+.tablerow:nth-of-type(odd) {
+	background:#EEEEEE;
+}
+.tabledata, .headeritem{
+	flex: 1 1 20%;
+	text-align:center;
+    padding: 10px;
+}
+.headeritem{
+    text-transform: uppercase;
+    color: #EEEEEE;
+}
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content:center;
+    margin-top:20px ;
+}

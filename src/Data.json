@@ -1,0 +1,185 @@
+
+[
+    {
+      "id": 1,
+      "title": "Agile Web Development with Rails",
+      "author": "David Heinemeier Hansson",
+      "noofcopies":20,
+      "year": "2009"
+    },
+    {
+      "id": 2,
+      "title": "Flask Web Development",
+      "author": "Miguel Grinberg",
+      "noofcopies":20,
+      "year": "2009"
+    },
+    {
+      "id": 3,
+      "title": "Agile web development",
+      "author": "Dave Thomas",
+      "noofcopies":20,
+      "year": "2009"
+    },
+    {
+      "id": 4,
+      "title": "CakePHP Application Development",
+      "author": "Ahsanul Bari",
+      "noofcopies":20,
+      "year": "2009"
+    },
+    {
+      "id": 5,
+      "title": "Alex Homer, ASP.NET ",
+      "author": "David Sussman",
+      "noofcopies":20,
+      "year": "2009"
+    },
+    {
+      "id": 6,
+      "title": "PHP Oracle Web Development",
+      "author": "Yuli Vasiliev",
+      "noofcopies":20,
+      "year": "2009"
+    },
+    {
+      "id": 7,
+      "title": "WordPress for Web Developers",
+      "author": "Stephanie Leary (auth.)",
+      "noofcopies":20,
+      "year": "2009"
+    },
+    {
+      "id": 8,
+      "title": "MODx Web Development",
+      "author": "Antano Solar John",
+      "noofcopies":20,
+      "year": "2009"
+    },
+    {
+      "id": 9,
+      "title": "Grok 1.0 Web Development",
+      "author": "Carlos de la Guardia",
+      "noofcopies":20,
+      "year": "2010"
+    },
+    {
+      "id": 10,
+      "title": "Professional JavaScript",
+      "author": "Nicholas C. Zakas",
+      "noofcopies":20,
+      "year": "2009"
+    },
+    {
+      "id": 11,
+      "title": "Art of Java Web Development",
+      "author": "Neal Ford",
+      "noofcopies":20,
+      "year": "2003"
+    },
+    {
+      "id": 12,
+      "title": "Agil Web Development",
+      "author": "the pragmatic programmers",
+      "noofcopies":20,
+      "year": "2021"
+    },
+    {
+      "id": 13,
+      "title": "Beginning CSS Web Development",
+      "author": "Simon Collison",
+      "noofcopies":20,
+      "year": "2006"
+    },
+    {
+      "id": 14,
+      "title": "Beginning PHP 6, Apache",
+      "author": "Timothy Boronczyk",
+      "noofcopies":20,
+      "year": "2009"
+    },
+    {
+      "id": 15,
+      "title": "Web development solutions",
+      "author": "Christian Heilmann; Mark Norman Francis",
+      "noofcopies":20,
+      "year": "2021"
+    },
+    {
+      "id": 16,
+      "title": "Instant Web Scraping with Java",
+      "noofcopies":20,
+      "author": "Ryan Mitchell",
+      "year": "2003"
+    },
+    {
+      "id": 17,
+      "title": "Beginning Smartphone Web Development",
+      "author": "Gail Frederick, Rajesh Lal",
+      "noofcopies":20,
+      "year": "2010"
+    },
+    {
+      "id": 18,
+      "title": "The Microsoft Expression",
+      "author": "Jim Cheshire",
+      "noofcopies":20,
+      "year": "2007"
+    },
+    {
+      "id": 19,
+      "title": "Tapestry 5: Building Web Applications",
+      "author": "Alexander Kolesnikov",
+      "noofcopies":20,
+      "year": "2008"
+    },
+    {
+      "id": 20,
+      "title": "Tapestry 5: Building Web Applications",
+      "author": "Alexander Kolesnikov",
+      "noofcopies":20,
+      "year": "2008"
+    },
+    {
+      "id": 21,
+      "title": "PHP 5 Fast and Easy Web Development",
+      "author": "Julie C. Meloni",
+      "noofcopies":20,
+      "year": "2008"
+    },
+    {
+      "id": 22,
+      "title": "Macromedia Flash MX 2004",
+      "author": "Lisa A. Bucki",
+      "noofcopies":20,
+      "year": "2006"
+    },
+    {
+      "id": 23,
+      "title": "PHP Fast & Easy Web Development",
+      "author": "Julie C. Meloni",
+      "noofcopies":20,
+      "year": "2002"
+    },
+    {
+      "id": 24,
+      "title": "Perl Fast & Easy Web Development",
+      "author": "Leslie W. Bate",
+      "noofcopies":20,
+      "year": "2002"
+    },
+    {
+      "id": 25,
+      "title": "PHP Oracle web development",
+      "author": "Yuli Vasiliev",
+      "noofcopies":20,
+      "year": "2007"
+    },
+    {
+      "id": 26,
+      "title": "PHP Oracle Web Development",
+      "author": "Yuli Vasiliev",
+      "noofcopies":20,
+      "year": "2007"
+    }
+]
