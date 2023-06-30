@@ -13,26 +13,14 @@ function Login() {
   const onHandleSubmit = async(e) => {
     console.log(type);
     e.preventDefault();
-    // const response =  await axios.post("https://librarymanagement-fqqg.onrender.com",{email:email,password:password,type:type},{
-    //     headers:{'Context-Type':"application/json"},
-    //     withCredentials:true
-    //   })
-    // if(response.data.success){
-    //   if(response.data.type === 'admin')navigate('/admin');
-    //   if(response.data.type === 'user')navigate('/user');
-    // }
-    if(email === "user@gmail.com" && password === "user@123" type==="user"){
-      navigate(/user);
+    const response =  await axios.post("https://librarymanagement-fqqg.onrender.com",{email:email,password:password},{
+        headers:{'Context-Type':"application/json"},
+        withCredentials:true
+      })
+    if(response.data.success){
+      if(response.data.type === 'admin')navigate('/admin');
+      if(response.data.type === 'user')navigate('/user');
     }
-    if(email === "admin@gmail.com" && password === "admin@123" type==="admin"){
-      navigate(/admin);
-    }
-    else{
-      type==="user" && setMessage("login-id:user@gmail.com password:user@123");
-      type === "admin"  && setMessage("login-id:admin@gmail.com password:admin@123");
-      setTimeout(()=>{setMessage(null)},1000)
-    }
-    
   };
   const setEmailHandler = (event)=>{
     setEmail(event.target.value);
