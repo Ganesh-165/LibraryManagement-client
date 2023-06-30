@@ -15,7 +15,7 @@ function Login() {
   const onHandleSubmit = async(e) => {
     console.log(type);
     e.preventDefault();
-    const response =  await axios.post("https://librarymanagement-fqqg.onrender.com",{email:email,password:password},{
+    const response =  await axios.post("https://librarymanagement-fqqg.onrender.com",{email:email,password:password,type:type},{
         headers:{'Context-Type':"application/json"},
         withCredentials:true
       })
