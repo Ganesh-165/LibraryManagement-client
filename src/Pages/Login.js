@@ -11,6 +11,7 @@ function Login() {
   const [type, setType] = useState("");
   const [message,setMessage] = useState("");
   const navigate = useNavigate();
+  axios.defaults.withCredentials = true;
   const onHandleSubmit = async(e) => {
     console.log(type);
     e.preventDefault();
