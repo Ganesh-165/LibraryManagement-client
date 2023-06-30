@@ -36,9 +36,9 @@ const Cart = () => {
                   <td className={classes.tabledata}>{item.noofcopies}</td>
                   <td className={classes.tabledata}>{item.year}</td>
                   <td className={classes.tabledata}>
-                    <p onClick={() => cartHandler(item.id)}>
+                    <span onClick={() => cartHandler(item.id)}>
                       <Button name="Remove" />
-                    </p>
+                    </span>
                   </td>
                 </tr>
               ))}
