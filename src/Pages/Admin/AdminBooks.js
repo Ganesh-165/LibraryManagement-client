@@ -46,9 +46,9 @@ const AdminBooks = () => {
                 <td className={classes.tabledata}>{item.noofcopies}</td>
                 <td className={classes.tabledata}>{item.year}</td>
                 <td className={classes.tabledata}>
-                  <p>
+                  <span>
                     <Button name="Remove" />
-                  </p>
+                  </span>
                 </td>
               </tr>
             ))}
