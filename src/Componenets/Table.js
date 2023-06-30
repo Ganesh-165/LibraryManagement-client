@@ -53,7 +53,7 @@ const Table = (props) => {
                         <td className={classes.tabledata}>{item.author}</td>
                         <td className={classes.tabledata}>{item.noofcopies}</td>
                         <td className={classes.tabledata}>{item.year}</td>
-                        <td className={classes.tabledata}><p onClick={()=>cartHandler(item)}><Button name='Add to Cart'/></p></td>
+                        <td className={classes.tabledata}><span onClick={()=>cartHandler(item)}><Button name='Add to Cart'/></span></td>
                     </tr>
                 ))}
                 </tbody>
